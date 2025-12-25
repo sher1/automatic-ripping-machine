@@ -1,6 +1,12 @@
-# IMPORTANT: This installation method is no longer supported. Please install ARM as a [Docker Container](https://github.com/automatic-ripping-machine/automatic-ripping-machine/wiki/docker) instead
+# Auto Install Script For OpenMediaVault/Debian/Ubuntu 20,22 24.02
 
-# Auto Install Script For OpenMediaVault/Debian
+> > [!CAUTION]
+> This installation method is not supported or maintained by the ARM Developers.
+> For full support and continued maintenance,
+> we recommend installing ARM via the supported [Docker Container](https://github.com/automatic-ripping-machine/automatic-ripping-machine/wiki/docker).
+> This installation method was developed for those that wish to use ARM without Docker.
+>
+> **Use at your own risk**
 
 This is **not recommended** for first time installations. This was only really intended to be used to reinstall on an environment you know works fully with ARM
 
@@ -9,9 +15,9 @@ This is **not recommended** for first time installations. This was only really i
 ## For the attended install use:
  ```
 sudo apt install wget
-wget https://raw.githubusercontent.com/automatic-ripping-machine/automatic-ripping-machine/v2_devel/scripts/installers/debian-install.sh
-sudo chmod +x debian-install.sh
-sudo ./debian-install.sh
+wget https://raw.githubusercontent.com/automatic-ripping-machine/automatic-ripping-machine/main/scripts/installers/DebianInstaller.sh
+sudo chmod +x DebianInstaller.sh
+sudo ./DebianInstaller.sh
 sudo chmod +x /opt/arm/scripts/update_key.sh
  ```
  ```reboot``` 
